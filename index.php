@@ -5,8 +5,14 @@ require_once './commons/lib.php';
 require_once './commons/db.php';
 require_once './commons/route.php';
 
-
+use App\Controllers\DashboardController;
+use App\Controllers\LoginController;
+use App\Controllers\QuestionController;
+use App\Controllers\QuizController;
 use App\Controllers\SubjectController;
+use App\Controllers\LogoController;
+use App\Controllers\AnswerController;
+
 $url = isset($_GET['url']) ? $_GET['url'] : "/";
 
 applyRoute($url);
